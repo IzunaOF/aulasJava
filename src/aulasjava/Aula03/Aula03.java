@@ -6,19 +6,31 @@ import java.util.Scanner;
 public class Aula03 {
     public static void main(String[] args){
         
-         Scanner leitor = new Scanner(System.in);
+        // Simulando DATABASE
+        int vagas = 5;
+        String nomeAlunos[] = new String[vagas];
+        Boolean matriculado[] = new Boolean[vagas];
+        Double mediaAlunos[] = new Double[vagas];
+        Integer idadeAlunos[] = new Integer[vagas];
+        
+        Scanner leitor = new Scanner(System.in);
+        for (int i = 0; i < vagas; i++) {
          System.out.println("Informe Seu Nome: ");
-         String nome = leitor.nextLine();
+         nomeAlunos[i] = leitor.nextLine();
          
          System.out.println("Você é estudante? ");
-         Boolean estudante = leitor.nextBoolean();
+         matriculado[i] = leitor.nextBoolean();
          
          System.out.println("Digite a média das notas: ");
-         Double media = leitor.nextDouble();
+         mediaAlunos[i] = leitor.nextDouble();
          
          System.out.println("Quantos anos você tem? ");
-         Integer idade = leitor.nextInt();
-         //JOptionPane.showMessageDialog(null, "Bem Vindo " + nome);
-         System.out.println("Olá " + nome);
+         idadeAlunos[i] = leitor.nextInt();
+        }
+        
+        for (int i = 0; i < vagas; i++) {
+            System.out.println("O Aluno" + nomeAlunos[i] + " teve média de " + mediaAlunos[i]);
+            System.out.println("Idade: " + idadeAlunos[i] + "Matriculado: " + matriculado[i]);
+        }
     }
 }
