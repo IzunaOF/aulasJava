@@ -1,5 +1,5 @@
 
-package aulasJava;
+package aulasJava.SegundaAula;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,6 @@ public class Momento2 {
                 case 'N':
                     System.out.println("Bom Noite!");
                     break;
-
                 default:
                     System.out.println("Opção inválida!");
                     break;
