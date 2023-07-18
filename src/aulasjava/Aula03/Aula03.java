@@ -15,8 +15,8 @@ public class Aula03 {
 //            int numero = leitor.nextInt();
 //            System.out.println("Números: " + numero);
 //            leitor.skip(",");
-//        }
-       // useJOptPane();
+//        } 
+        // useJOptPane();
         new PrimeiraInterface();
     }
 
@@ -36,7 +36,7 @@ public class Aula03 {
         int confirm = JOptionPane.showConfirmDialog(null, "Deseja confirmar o cadastro?", "Conclusão de Cadastro", JOptionPane.YES_NO_OPTION);
 
         if (confirm == JOptionPane.YES_OPTION) {
-            JOptionPane.showMessageDialog(null, "Usuario ' " + nome + " ' Cadastrado" , "Cadastro efetuado com sucesso!",  JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Usuario ' " + nome + " ' Cadastrado", "Cadastro efetuado com sucesso!", JOptionPane.INFORMATION_MESSAGE);
         } else {
             JOptionPane.showMessageDialog(null, "Erro de autenticação", "Cadastro Interrompido", JOptionPane.ERROR_MESSAGE);
         }
