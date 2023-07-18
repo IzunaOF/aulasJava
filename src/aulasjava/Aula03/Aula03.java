@@ -1,5 +1,6 @@
 package aulasjava.Aula03;
 
+import aulasjava.Aula04.PrimeiraInterface;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 
@@ -15,7 +16,8 @@ public class Aula03 {
 //            System.out.println("Números: " + numero);
 //            leitor.skip(",");
 //        }
-        useJOptPane();
+       // useJOptPane();
+        new PrimeiraInterface();
     }
 
     public static void useJOptPane() {
