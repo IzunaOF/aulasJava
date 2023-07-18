@@ -1,6 +1,4 @@
-package aulasJava;
-
-import javax.swing.JOptionPane;
+package aulasJava.SegundaAula;
 
 public class Begin {
 
