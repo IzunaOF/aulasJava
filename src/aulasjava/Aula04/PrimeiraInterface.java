@@ -34,7 +34,7 @@ public class PrimeiraInterface {
             int height = 30;
             public void actionPerformed(ActionEvent e){
                 janela.add(new JButton("adicionado")).setBounds(left, top, width, height);
-                top += 35;
+                top += 31;
             }
         });
         texto.setBounds(100, 130, 100, 30);
