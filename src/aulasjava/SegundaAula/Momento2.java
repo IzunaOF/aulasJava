@@ -54,6 +54,5 @@ public class Momento2 {
         for (int i = 0; i < vetor.length; i++) {
             System.out.println(vetor[i]);
         }
-
     }
 }

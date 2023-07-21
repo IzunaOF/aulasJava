@@ -61,14 +61,7 @@ public class Pomodoro extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void atualizaTempo() {
-        int minutos = tempoRestante / 60;
-        int segundos = tempoRestante % 60;
-        
-        String formatted = String.format("%02d:%02d", minutos, segundos);
-        
-        tempoDecorrido.setText("00:" + formatted);
-    }
+
 
     private void startBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBtnActionPerformed
         // TODO add your handling code here:
@@ -87,4 +80,12 @@ public class Pomodoro extends javax.swing.JFrame {
     private javax.swing.JButton startBtn;
     private javax.swing.JLabel tempoDecorrido;
     // End of variables declaration//GEN-END:variables
-}
+
+    private void atualizaTempo() {
+        int minutos = tempoRestante / 60;
+        int segundos = tempoRestante % 60;
+
+        String formatted = String.format("%02d:%02d", minutos, segundos);
+
+        tempoDecorrido.setText("");
+    }}
