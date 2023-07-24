@@ -18,7 +18,7 @@ public class myTimer {
 
         String[] birth = input.split("/");
 
-        date.set(Integer.parseInt(birth[2]), Integer.parseInt(birth[1]), Integer.parseInt(birth[0]));
+        date.set(Integer.parseInt(birth[2]), Integer.parseInt(birth[1]) - 1, Integer.parseInt(birth[0]));
         JOptionPane.showMessageDialog(null, date.getTime());
     }
 }

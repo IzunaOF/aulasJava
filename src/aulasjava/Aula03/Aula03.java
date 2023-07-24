@@ -57,7 +57,7 @@ public class Aula03 {
         for (int i = 0; i < vagas; i++) {
             System.out.println("Informe Seu Nome: ");
             nomeAlunos[i] = leitor.nextLine();
-
+            
             System.out.println("Você é estudante? ");
             matriculado[i] = leitor.nextBoolean();
 
