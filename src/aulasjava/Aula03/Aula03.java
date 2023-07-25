@@ -1,6 +1,7 @@
 package aulasjava.Aula03;
 
 import aulasjava.Aula04.Pomodoro;
+import aulasjava.Aula04.PomodoroADV;
 import aulasjava.Aula04.PrimeiraInterface;
 import aulasjava.Aula04.SegundaInterface;
 import javax.swing.JOptionPane;
@@ -21,7 +22,9 @@ public class Aula03 {
         // useJOptPane();
         //new PrimeiraInterface();
        // new SegundaInterface().setVisible(true);
-        new Pomodoro().setVisible(true);
+        //new Pomodoro().setVisible(true);
+        
+        new PomodoroADV().setVisible(true);
     }
 
     public static void useJOptPane() {
