@@ -1,5 +1,9 @@
 package aulasjava.Aula03;
 
+import aulasjava.Aula04.Pomodoro;
+import aulasjava.Aula04.PomodoroADV;
+import aulasjava.Aula04.PrimeiraInterface;
+import aulasjava.Aula04.SegundaInterface;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 
@@ -14,8 +18,13 @@ public class Aula03 {
 //            int numero = leitor.nextInt();
 //            System.out.println("Números: " + numero);
 //            leitor.skip(",");
-//        }
-        useJOptPane();
+//        } 
+        // useJOptPane();
+        //new PrimeiraInterface();
+       // new SegundaInterface().setVisible(true);
+        //new Pomodoro().setVisible(true);
+        
+        new PomodoroADV().setVisible(true);
     }
 
     public static void useJOptPane() {
@@ -34,7 +43,7 @@ public class Aula03 {
         int confirm = JOptionPane.showConfirmDialog(null, "Deseja confirmar o cadastro?", "Conclusão de Cadastro", JOptionPane.YES_NO_OPTION);
 
         if (confirm == JOptionPane.YES_OPTION) {
-            JOptionPane.showMessageDialog(null, "Usuario ' " + nome + " ' Cadastrado" , "Cadastro efetuado com sucesso!",  JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Usuario ' " + nome + " ' Cadastrado", "Cadastro efetuado com sucesso!", JOptionPane.INFORMATION_MESSAGE);
         } else {
             JOptionPane.showMessageDialog(null, "Erro de autenticação", "Cadastro Interrompido", JOptionPane.ERROR_MESSAGE);
         }
@@ -51,7 +60,7 @@ public class Aula03 {
         for (int i = 0; i < vagas; i++) {
             System.out.println("Informe Seu Nome: ");
             nomeAlunos[i] = leitor.nextLine();
-
+            
             System.out.println("Você é estudante? ");
             matriculado[i] = leitor.nextBoolean();
 
